@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import './App.css'
+import React, { Component } from 'react'
+
 
 function App() {
 
@@ -8,7 +8,6 @@ function App() {
     <div>
       <h1>Hello World!</h1>
     </div>
-    
   )
 }
 

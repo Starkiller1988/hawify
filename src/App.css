@@ -3,16 +3,52 @@
     margin: 0;
 }
 
-.footer{
-    margin-top: 1rem;
-    padding: 1rem;
-    border-style: solid;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 97.6%;
-}
-
 body{
     background-color: teal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-top: 200px;
+}
+
+.cashbook{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.shopping{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.calculator{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.calendar{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+}
+
+.aboutapp{
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
 }

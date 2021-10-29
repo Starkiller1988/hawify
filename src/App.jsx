@@ -6,7 +6,9 @@ import Header from "../header&footer/header/header"
 function App() {
   return (
     <>
-    <Header />
+<div>
+  <img src="" alt="" />
+</div>
 
       <ul className="nav-list">
         <li className="cashbook">

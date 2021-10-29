@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Footer from "../header&footer/footer/footer";
 import styles from "../src/App.css";
-import Header from "../header&footer/header/header"
+import Logo from "./images/Hawify.gif";
 
 function App() {
   return (
     <>
 <div>
-  <img src="" alt="" />
+  <img src="./images/Hawify.gif" alt="" />
 </div>
 
       <ul className="nav-list">

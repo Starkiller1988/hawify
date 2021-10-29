@@ -4,7 +4,13 @@ import styles from '../footer/footer.css';
 const Footer = () => (
     <div className="footer">
     <footer>
-        <img src="" alt="" />
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
     </footer>
     </div>
 );

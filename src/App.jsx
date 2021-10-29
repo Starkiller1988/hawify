@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Footer from "../header&footer/footer/footer";
 import styles from "../src/App.css";
-import Logo from "./images/Hawify.gif";
+import IMG1 from "../src/images/Logo.png";
 
 function App() {
   return (
     <>
-<div>
-  <img src="./images/Hawify.gif" alt="" />
-</div>
+
+<img className="logo" src="../src/images/Logo.png" alt="" />
+
 
       <ul className="nav-list">
         <li className="cashbook">

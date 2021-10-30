@@ -1,7 +1,6 @@
-import React, { Component } from "react";
-import Footer from "../header&footer/footer/footer";
+import React from "react";
 import styles from "../src/App.css";
-import IMG1 from "../src/images/Logo.png";
+
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
 
       <ul className="nav-list">
         <li className="cashbook">
-          <a className="nav-item">Kassenbuch</a>
+          <a className="nav-item" href=''>Kassenbuch</a>
         </li>
         <li className="shopping">
           <a className="nav-item">Shopping-List</a>

@@ -1,0 +1,34 @@
+import { Link } from 'react-router-dom';
+
+
+const Menu = () => {
+    return(
+       
+
+        
+       <div>
+
+<img className="logo" src="../src/images/Logo.png" alt="" />
+
+        <ul className="nav-list">
+        <li className="cashbook">
+          <Link to='/income' className="nav-item">Kassenbuch</Link>
+        </li>
+        <li className="shopping">
+          <Link to='/shop' className="nav-item">Shopping-List</Link>
+        </li>
+        <li className="calculator">
+          <Link to='/calculator' className="nav-item">Taschenrechner</Link>
+        </li>
+        <li className="calendar">
+          <Link to='/todo' className="nav-item">Kalender</Link>
+        </li>
+        <li className="aboutapp">
+          <Link to='/about' className="nav-item">Über HAWI.FY</Link>
+        </li>
+        </ul>
+        </div> 
+    )
+}
+
+export default Menu;

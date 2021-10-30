@@ -1,16 +1,14 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
+const Expense = () => {
+    return(
+        <div className="expense">
 
-function income () {
+<Link to="/" className="start">Home</Link>
 
-return(
-
-<>
-<h1>Hello World</h1>
-</>
-
-);
-
+            <h2 className="text">This is the Expense Tracker Site!</h2>
+        </div>
+    );
 }
 
-export default income;
+export default Expense;

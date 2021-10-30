@@ -94,3 +94,16 @@ body {
   border-style: solid;
   box-shadow: 0 0 0 2px;
 }
+
+
+.start{
+  color: white;
+  font-size: 20px;
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  color: white;
+}

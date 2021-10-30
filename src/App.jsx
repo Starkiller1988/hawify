@@ -1,32 +1,42 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from "../src/App.css";
+import Menu from "../navbar/Menu";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import Expense from '../pages/income'
+import Calendar from '../pages/calender'
+import ShoppingList from '../pages/shoppingList'
+import Calculator from '../pages/calculator'
+import About from '../pages/about'
 
 function App() {
   return (
-    <>
 
-<img className="logo" src="../src/images/Logo.png" alt="" />
+<Router>
+
+<Switch>
+<Route exact path="/">
+<Menu />
+</Route>
+<Route exact path="/income">
+<Expense />
+</Route>
+<Route exact path="/shop">
+  <ShoppingList />
+</Route>
+<Route exact path="/calculator">
+  <Calculator />
+</Route>
+<Route exact path="/todo">
+  <Calendar />
+</Route>
+<Route exact path="/about">
+  <About />
+</Route>
 
 
-      <ul className="nav-list">
-        <li className="cashbook">
-          <a className="nav-item" href='../src/components/income_outcome/income'>Kassenbuch</a>
-        </li>
-        <li className="shopping">
-          <a className="nav-item">Shopping-List</a>
-        </li>
-        <li className="calculator">
-          <a className="nav-item">Taschenrechner</a>
-        </li>
-        <li className="calendar">
-          <a className="nav-item">Kalender</a>
-        </li>
-        <li className="aboutapp">
-          <a className="nav-item">Über HAWI.FY</a>
-        </li>
-      </ul>
-    </>
+</Switch>
+</Router>
   );
 }
 

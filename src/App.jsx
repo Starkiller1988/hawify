@@ -11,7 +11,7 @@ function App() {
 
       <ul className="nav-list">
         <li className="cashbook">
-          <a className="nav-item" href=''>Kassenbuch</a>
+          <a className="nav-item" href='../src/components/income_outcome/income'>Kassenbuch</a>
         </li>
         <li className="shopping">
           <a className="nav-item">Shopping-List</a>

@@ -15,7 +15,7 @@ const Menu = () => {
           <Link to='/income' className="nav-item">Kassenbuch</Link>
         </li>
         <li className="shopping">
-          <Link to='/shop' className="nav-item">Shopping-List</Link>
+          <Link to='/shop' className="nav-item">Einkaufsliste</Link>
         </li>
         <li className="calculator">
           <Link to='/calculator' className="nav-item">Taschenrechner</Link>
@@ -24,7 +24,7 @@ const Menu = () => {
           <Link to='/todo' className="nav-item">Kalender</Link>
         </li>
         <li className="aboutapp">
-          <Link to='/about' className="nav-item">Über HAWI.FY</Link>
+          <Link to='/about' className="nav-item">Über die App</Link>
         </li>
         </ul>
         </div> 

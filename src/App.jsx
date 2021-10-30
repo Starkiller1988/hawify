@@ -13,7 +13,6 @@ function App() {
   return (
 
 <Router>
-
 <Switch>
 <Route exact path="/">
 <Menu />
@@ -33,8 +32,6 @@ function App() {
 <Route exact path="/about">
   <About />
 </Route>
-
-
 </Switch>
 </Router>
   );

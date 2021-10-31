@@ -20,8 +20,8 @@ const Menu = () => {
         <li className="calculator">
           <Link to='/calculator' className="nav-item">Taschenrechner</Link>
         </li>
-        <li className="calendar">
-          <Link to='/todo' className="nav-item">Kalender</Link>
+        <li className="todolist">
+          <Link to='/todo' className="nav-item">To-Do Liste</Link>
         </li>
         <li className="aboutapp">
           <Link to='/about' className="nav-item">Über die App</Link>

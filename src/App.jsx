@@ -4,7 +4,7 @@ import Menu from "../navbar/Menu";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Expense from '../pages/income'
-import Calendar from '../pages/calender'
+import ToDoList from '../pages/calender'
 import ShoppingList from '../pages/shoppingList'
 import Calculator from '../pages/calculator'
 import About from '../pages/about'
@@ -27,7 +27,7 @@ function App() {
   <Calculator />
 </Route>
 <Route exact path="/todo">
-  <Calendar />
+  <ToDoList />
 </Route>
 <Route exact path="/about">
   <About />

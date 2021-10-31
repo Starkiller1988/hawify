@@ -132,11 +132,11 @@ body {
 
 display: flex;
 margin: auto;
-margin-top: 30px;
+margin-top: 20px;
 border-style: solid;
 box-shadow: 0 0 0 1px;
 width: 70%;
-height: 30px;
+height: 40px;
 font-size: 18px;
 
 }
@@ -145,22 +145,34 @@ font-size: 18px;
 display: flex;
 padding-left: 20px;
 padding-right: 20px;
-padding-top: 30px;
+padding-top: 10px;
 gap: 10px;
 height: 50px;
 }
 
 button{
-font-size: 19px;
+font-size: 17px;
 width: 70%;
 border-radius: 10px;
 box-shadow: 0 1px;
 }
 
-.choose_day{
+.choose_weekday{
 display: flex;
 justify-content: center;
 margin-top: 50px;
+}
+
+.choose_day{
+  float: left;
+  width: 40px;
+}
+
+
+.choose_month, .choose_year{
+  float: left;
+  width: 90px;
+  
 }
 
 .todo_field{
@@ -168,8 +180,8 @@ margin-top: 50px;
   background-color: white;
   margin: auto;
   justify-content: center;
-  margin-top: 30px;
-  height: 450px;
+  margin-top: 50px;
+  height: 440px;
   border-style: solid;
   margin-left: 10px;
   margin-right: 10px;
@@ -181,10 +193,14 @@ margin-top: 50px;
   background-color: #F3E779
 }
 
-select{
-  height: 30px;
+.weekday{
+  height: 20px;
   width: 50%;
   text-align: center;
-  font-size: 18px;
-  font-family: Poetsen One;
+  font-size: 14px;
+}
+
+.choose_date{
+  margin-left: 97px;
+  margin-top: 15px;
 }

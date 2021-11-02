@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import styles from '../'
 
 const Calculator = () => {
-  const [result, setResult] = useState("hii");
+  const [result, setResult] = useState("");
 
   return (
     <>
@@ -27,13 +28,13 @@ const Calculator = () => {
           <button>5</button>
           <button>6</button>
           <button>&ndash;</button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>+</button>
+          <button>0</button>
+          <button>.</button>
+          <button>=</button>
         </div>
       </div>
     </>

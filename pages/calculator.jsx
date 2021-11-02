@@ -5,7 +5,7 @@ const Calculator = () => {
     return(
         <div className="count">
 
-<Link to="/" className="start">Home</Link>
+<Link to="/" className="start">Startseite</Link>
 
             <h2 className="text">This is the Calculator Site!</h2>
         </div>

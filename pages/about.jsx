@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <Link to="/" className="start">
-        Home
+        Startseite
       </Link>
 
       <img className="logo_about" src="../src/images/Logo.png" alt="" />

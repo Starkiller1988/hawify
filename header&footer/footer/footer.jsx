@@ -1,18 +1,17 @@
-import React from 'react';
-import styles from '../footer/footer.css';
+import React from "react";
+import styles from "../footer/footer.css";
 
 const Footer = () => (
-    <div className="footer">
+  <div className="footer">
     <footer>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
-        </ul>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </footer>
-    </div>
+  </div>
 );
 
 export default Footer;

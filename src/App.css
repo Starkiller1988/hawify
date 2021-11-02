@@ -85,9 +85,7 @@ body {
   box-shadow: 0 0 0 2px;
 }
 
-
 /* About HAWI.FY Component */
-
 
 .aboutapp {
   background-color: white;
@@ -128,34 +126,34 @@ body {
 
 /* Task List Component */
 
-.input_todos{
-display: flex;
-margin: auto;
-margin-top: 20px;
-border-style: solid;
-box-shadow: 0 0 0 1px;
-width: 70%;
-height: 40px;
-font-size: 18px;
+.input_todos {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  border-style: solid;
+  box-shadow: 0 0 0 1px;
+  width: 70%;
+  height: 40px;
+  font-size: 18px;
 }
 
-.delete_clear{
-display: flex;
-padding-left: 20px;
-padding-right: 20px;
-padding-top: 10px;
-gap: 10px;
-height: 50px;
+.delete_clear {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  gap: 10px;
+  height: 50px;
 }
 
-button{
-font-size: 17px;
-width: 70%;
-border-radius: 10px;
-box-shadow: 0 1px;
+button {
+  font-size: 17px;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 1px;
 }
 
-.task-list{
+.task-list {
   display: flex;
   background-color: white;
   justify-content: center;
@@ -170,12 +168,12 @@ box-shadow: 0 1px;
   background-image: url(../src/images/bulletin-board.jpg);
 }
 
-.choose_date{
+.choose_date {
   margin-left: 97px;
   margin-top: 15px;
 }
 
-.title_tasklist{
+.title_tasklist {
   display: flex;
   justify-content: center;
   font-family: Poetsen One;
@@ -184,13 +182,13 @@ box-shadow: 0 1px;
   color: black;
 }
 
-.task-list{
+.task-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.title_tasklist{
+.title_tasklist {
   display: flex;
   justify-content: center;
   font-family: Poetsen One;
@@ -199,11 +197,11 @@ box-shadow: 0 1px;
   font-size: 25px;
 }
 
-.value_task{
+.value_task {
   font-size: 20px;
 }
 
-.check{
+.check {
   display: flex;
   justify-content: center;
   height: 20px;
@@ -213,36 +211,35 @@ box-shadow: 0 1px;
   margin-top: 25px;
 }
 
-.numberoftasks{
-display: flex;
-margin-right: 20px;
+.numberoftasks {
+  display: flex;
+  margin-right: 20px;
 }
 
-.lefttasks{
+.lefttasks {
   display: flex;
   justify-content: flex-end;
   position: relative;
   font-size: 20px;
-  background-color:#F3E779;
+  background-color: #f3e779;
   margin-left: 130px;
   font-family: Poetsen One;
 }
 
-.labeltasks{
-display: flex;
+.labeltasks {
+  display: flex;
 }
 
-.task{
+.task {
   display: flex;
   margin-top: 20px;
   font-family: Poetsen One;
   font-size: 22px;
 }
 
-.back{
-  background-color: #F3E779;
+.back {
+  background-color: #f3e779;
   height: 100%;
 }
 
 /* Calculator Component */
-

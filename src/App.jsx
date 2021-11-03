@@ -7,6 +7,7 @@ import Expense from "../pages/income";
 import ToDoList from "../pages/calender";
 import ShoppingList from "../pages/shoppingList";
 import Calculator from "../pages/calculator";
+import Map from "../pages/map"
 import About from "../pages/about";
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path="/todo">
           <ToDoList />
+        </Route>
+        <Route exact path="/map">
+          <Map />
         </Route>
         <Route exact path="/about">
           <About />

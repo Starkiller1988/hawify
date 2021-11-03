@@ -256,3 +256,13 @@ button {
   background-color: black;
   border-radius: 5px;
 }
+
+.map{
+  background-color: white;
+  font-size: 20px;
+  height: 60px;
+  width: 250px;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0 0 0 2px;
+}

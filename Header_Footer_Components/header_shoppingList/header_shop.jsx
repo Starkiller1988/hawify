@@ -12,7 +12,7 @@ const HeaderShop = () => {
                 </a>
             </div>
             <div>
-                <a href="#/cart">Einkaufskorb</a>
+                <a href="#/cart">Korb</a>
             </div>
 
         </header>

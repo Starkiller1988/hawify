@@ -1,4 +1,7 @@
-import {IMG1} from './images/cherrytomatos.jpg'
+import React from 'react'
+import IMG1 from './img_shop/cherrytomatos.png'
+import IMG2 from './img_shop/bananas.png'
+
 
 
 
@@ -7,9 +10,28 @@ const data = {
         {
             id: '1',
             name: 'Cherrytomaten',
-            Durchschnittspreis: '0.46 €',
-            image: {IMG1}
+            price: '0.46',
+            image: IMG1,
+        },
+        {
+            id: '2',
+            name: '6 Bananen',
+            price: '1.35',
+            image: IMG2,
+        },
+        {
+            id: '3',
+            name: 'Cherrytomaten',
+            price: '0.46',
+            image: IMG1,
+        },
+        {
+            id: '4',
+            name: 'Cherrytomaten',
+            price: '0.46',
+            image: IMG1,
         }
+        
     ]
 }
 

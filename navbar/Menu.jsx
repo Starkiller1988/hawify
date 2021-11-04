@@ -26,11 +26,6 @@ const Menu = () => {
             To-Do Liste
           </Link>
         </li>
-        <li className="map">
-          <Link to="/map" className="nav-item">
-            Karte
-          </Link>
-        </li>
         <li className="aboutapp">
           <Link to="/about" className="nav-item">
             Über die App

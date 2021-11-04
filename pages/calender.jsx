@@ -55,8 +55,8 @@ const ToDoList = () => {
       />
 
       <div className="delete_clear">
-        <button onClick={handleAddTask}>Aufgabe hinzufügen</button>
-        <button onClick={handleClearTasks}>Aufgabe entfernen</button>
+        <button onClick={handleAddTask} className="add_task">Aufgabe hinzufügen</button>
+        <button onClick={handleClearTasks} className="delete_task">Aufgabe entfernen</button>
       </div>
     </div>
   );

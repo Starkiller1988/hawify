@@ -2,7 +2,6 @@
     font-size: 18px;
 } 
 
-
 .body_calculator{
     display: flex;
     justify-content: center;
@@ -19,8 +18,7 @@
     height: 550px;
     text-align: center;
     border: 5px solid black;
-    background: grey;
-    border-radius: 5px;
+    background: black;
 }
 
 .keypad{
@@ -32,42 +30,30 @@
 input[type="text"] {
     height: 100px;
     width: 100%;
-    background-color: rgb(117, 114, 114);
-    border: 0px;
+    background-color: grey;
+    border: 2px;
     color: white;
     text-align: right;
     font-size: 35px;
     letter-spacing: 1px;
 }
 
-button{
-    width: 82px;
-    margin: 1px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: grey;
-    color: white;
-    font-weight: 500;
-    font-size: 25px;
-}
-
 #clear{
     grid-column: 1/3;
     grid-row: 1;
-    color: white;
+    color: black;
     width: 169px;
 }
 
 #backspace{
-    color: white;
+    color: black;
 }
 
 #result{
     grid-column: 3/5;
     grid-row: 5;
-    color: white;
-    width: 165px;
+    color: black;
+    width: 167px;
 }
 
 input:focus,
@@ -80,6 +66,11 @@ outline: none;
 
 .highlight{
     background: teal;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 25px;
+    border-color: black;
+
 }
 
 .title_calculator{
@@ -87,8 +78,15 @@ outline: none;
   font-family: Poetsen One;
   text-align: center;
   background-color: teal;
-  color: white;
-  width: 320px;
+  color: black;
+  width: 324px;
   padding: 7px;
   font-size: 30px;
+}
+.btn_calc{
+    border-radius: 5px;
+    background-color: grey;
+    color: black;
+    font-size: 25px;
+
 }

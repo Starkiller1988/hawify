@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Video from "../components/Videos/Backgroundmovie.mp4";
 
 const About = () => {
   return (
@@ -7,6 +8,10 @@ const About = () => {
         Startseite
       </Link>
 
+      <video className="bkvideo" autoPlay muted loop>
+        <source src={Video} type="video/mp4" />
+      </video>
+<div className="content">
       <img className="logo_about" src="../src/images/Logo.png" alt="" />
 
       <div className="about_hawify">
@@ -22,6 +27,7 @@ const About = () => {
           Funktion und ein Kalender für die täglichen "To-Do's" einprogramiert.
           Erweiterungen der Anwendung sind geplant.
         </p>
+      </div>
       </div>
     </div>
   );

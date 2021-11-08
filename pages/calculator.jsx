@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Styles from "../pages/calculator.css";
+import Video from "../components/Videos/Backgroundmovie.mp4";
 
 const Calculator = () => {
   const [result, setResult] = useState("");
@@ -27,19 +28,26 @@ const Calculator = () => {
 
   return (
     <div className="body_calculator">
-      
+
+
+
       <Link to="/" className="start">
         Startseite
       </Link>
 
-      <div className="container">
+      <video className="bkvideo" autoPlay muted loop>
+        <source src={Video} type="video/mp4" />
+      </video>
 
-      <div className="title_calculator">
-        Taschenrechner
-      </div>
+      <div className="content">
 
+      <div className="title_calculator">Taschenrechner</div>
+
+
+        <div className="container">
+        
         <form>
-          <input type="text" value={result} class/>
+          <input type="text" value={result} class />
         </form>
 
         <div className="keypad">
@@ -98,6 +106,7 @@ const Calculator = () => {
             =
           </button>
         </div>
+      </div>
       </div>
     </div>
   );

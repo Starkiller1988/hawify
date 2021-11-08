@@ -4,7 +4,7 @@ import Menu from "../navbar/Menu";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Expense from "../pages/income";
-import ToDoList from "../pages/calender";
+import ToDoList from "../pages/todo";
 import ShoppingList from "../pages/shoppingList";
 import Calculator from "../pages/calculator";
 import About from "../pages/about";

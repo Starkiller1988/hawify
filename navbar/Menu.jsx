@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
+import Video from "../components/Videos/Backgroundmovie.mp4";
+
 
 const Menu = () => {
   return (
-    <div>
-      <img className="logo" src="../src/images/Logo.png" alt="" />
+  <>
+
+      <video className="bkvideo" autoPlay muted loop>
+        <source src={Video} type="video/mp4" />
+      </video>
+
+      <div className="content">
+
+<img className="logo" src="../src/images/Logo.png" alt="" />
 
       <ul className="nav-list">
         <li className="cashbook">
@@ -32,7 +41,8 @@ const Menu = () => {
           </Link>
         </li>
       </ul>
-    </div>
+      </div>
+</>
   );
 };
 

@@ -20,7 +20,7 @@
   grid-auto-rows: minmax(90px, auto);
 }
 
-input[type="text"] {
+.input_calculate {
   height: 100px;
   width: 100%;
   background-color:rgba(0, 0, 0, 0.5);

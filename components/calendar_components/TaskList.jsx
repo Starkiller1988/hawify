@@ -5,10 +5,7 @@ export default function TaskList({ tasks, toggleTask }) {
   return (
     <div className="task-list">
       <div className="lefttasks">
-        {tasks.filter((task) => !task.complete).length} Aufgabe(n) übrig
-      </div>
-      <div className="title_tasklist">
-        <h2 className="title_task">To-Do-List</h2>
+        {tasks.filter((task) => !task.complete).length} Aufgaben übrig
       </div>
       <div className="back">
         <div className="value_task">

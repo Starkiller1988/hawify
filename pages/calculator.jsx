@@ -47,7 +47,7 @@ const Calculator = () => {
         <div className="container">
         
         <form>
-          <input type="text" value={result} class />
+          <input type="text" value={result} className="input_calculate" />
         </form>
 
         <div className="keypad">

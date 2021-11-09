@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import Video from "../components/Videos/Backgroundmovie.mp4";
 
 
+
 const Menu = () => {
   return (
   <>
-
       <video className="bkvideo" autoPlay muted loop>
         <source src={Video} type="video/mp4" />
       </video>

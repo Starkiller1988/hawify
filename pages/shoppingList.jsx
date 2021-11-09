@@ -42,22 +42,15 @@ const ShoppingList = () => {
 
   return (
     <div className="item">
-
-
       <video className="bkvideo" autoPlay muted loop>
         <source src={Video} type="video/mp4" />
       </video>
 
-
-<Link to="/" className="start">
+      <Link to="/" className="start">
         Startseite
       </Link>
 
-
-
       <div className="content">
-
-
         <ItemList items={items} toggleItem={toggleItem} />
 
         <input

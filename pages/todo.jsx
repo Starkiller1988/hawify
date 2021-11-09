@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import TaskList from "../components/calendar_components/TaskList";
+import TaskList from "../components/todo_components/TaskList";
 import { v4 as uuid } from "uuid";
 import Video from "../components/Videos/Backgroundmovie.mp4";
 
@@ -42,21 +42,15 @@ const ToDoList = () => {
 
   return (
     <div className="todo">
-
       <video className="bkvideo" autoPlay muted loop>
         <source src={Video} type="video/mp4" />
       </video>
 
-
-<Link to="/" className="start">
+      <Link to="/" className="start">
         Startseite
       </Link>
 
-
-
       <div className="content">
-
-
         <TaskList tasks={tasks} toggleTask={toggleTask} />
 
         <input

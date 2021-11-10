@@ -3,7 +3,7 @@ import styles from "../src/App.css";
 import Menu from "../navbar/Menu";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Expense from "../pages/income";
+import Expense from "../pages/expense_tracker";
 import ToDoList from "../pages/todo";
 import ShoppingList from "../pages/shoppingList";
 import Calculator from "../pages/calculator";
@@ -16,10 +16,7 @@ function App() {
         <Route exact path="/">
           <Menu />
         </Route>
-        <Route exact path="/">
-          <Menu />
-        </Route>
-        <Route exact path="/income">
+        <Route exact path="/expense_tracker">
           <Expense />
         </Route>
         <Route exact path="/shop">

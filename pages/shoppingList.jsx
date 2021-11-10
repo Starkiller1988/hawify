@@ -41,7 +41,7 @@ const ShoppingList = () => {
   }
 
   return (
-    <div className="item">
+    <div>
       <video className="bkvideo" autoPlay muted loop>
         <source src={Video} type="video/mp4" />
       </video>

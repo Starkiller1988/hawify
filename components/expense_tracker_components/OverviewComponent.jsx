@@ -71,7 +71,6 @@ const AddTransactionView = (props) => {
   const [desc, setDesc] = useState();
   const [type, setType] = useState("EXPENSE");
 
-
   const addTransaction = () => {
     props.addTransaction({
       amount: Number(amount),
@@ -116,7 +115,7 @@ const AddTransactionView = (props) => {
         <label htmlFor="income">Einnahmen</label>
       </RadioBox>
       <AddTransaction onClick={addTransaction}>
-       Transaktion einfügen
+        Transaktion einfügen
       </AddTransaction>
     </AddTransactionContainer>
   );

@@ -2,10 +2,12 @@ import React from "react";
 import Task from "./Task";
 
 export default function TaskList({ tasks, toggleTask }) {
+  const uncompletedTasks = tasks.filter((task) => !task.complete).length
+
   return (
     <div className="task-list">
       <div className="lefttasks">
-        {tasks.filter((task) => !task.complete).length} Aufgaben übrig
+        {uncompletedTasks} Aufgaben übrig
       </div>
       <div className="title_tasklist">
         <h2>To-Do-List</h2>

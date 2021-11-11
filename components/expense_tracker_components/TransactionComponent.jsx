@@ -55,17 +55,19 @@ const TransactionComponent = (props) => {
     txn = txn.filter((payload) =>
       payload.desc.toLowerCase().includes(searchText.toLowerCase().trim())
     );
-    updateTxn(txn)
+    updateTxn(txn);
   };
-  useEffect(()=>filterData(searchText),[props.transactions])
+  useEffect(() => filterData(searchText), [props.transactions]);
   return (
     <Container>
       Transaktion
       <input
         placeholder="Suchen"
         value={searchText}
-        onChange={(e) => {updateSearchText(e.target.value)
-            filterData(e.target.value)}}
+        onChange={(e) => {
+          updateSearchText(e.target.value);
+          filterData(e.target.value);
+        }}
       />
       {filteredTransaction?.length
         ? filteredTransaction.map((payload) => (

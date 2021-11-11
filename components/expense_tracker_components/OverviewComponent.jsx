@@ -23,19 +23,19 @@ const BalanceBox = styled.div`
   height: 50px;
   padding-left: 4px;
   background-color: white;
-  color: black
+  color: black;
 `;
 
 const AddTransaction = styled.div`
   background: black;
   color: white;
-  padding: 5px 10px;
+  padding: 2px 40px;
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  font-size: 15px;
-  margin-right: 10px ;
+  font-size: 20px;
+  margin-right: 10px;
 `;
 
 const AddTransactionContainer = styled.button`
@@ -71,8 +71,14 @@ const AddTransactionView = (props) => {
   const [desc, setDesc] = useState();
   const [type, setType] = useState("EXPENSE");
 
+
   const addTransaction = () => {
-      props.addTransaction({ amount: Number(amount), desc, type, id: Date.now(),});
+    props.addTransaction({
+      amount: Number(amount),
+      desc,
+      type,
+      id: Date.now(),
+    });
     props.toggleAddTxn();
   };
 
@@ -110,37 +116,36 @@ const AddTransactionView = (props) => {
         <label htmlFor="income">Einnahmen</label>
       </RadioBox>
       <AddTransaction onClick={addTransaction}>
-        Transaktion einfügen
+       Transaktion einfügen
       </AddTransaction>
     </AddTransactionContainer>
   );
 };
 
-
 const ExpenseContainer = styled.div`
-display:flex;
-flex-direction: row;
-gap: 12px;
-margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 20px;
 `;
 
-const ExpenseBox= styled.div`
-display:flex;
-flex-direction: column;
-border-radius: 4px;
-border: 1px solid #e6e8e9;
-padding: 15px 20px;
-text-align: center;
-gap: 5px;
-width: 120px;
-background-color: white;
-color: black;
-font-size: 17px;
-& span{
+const ExpenseBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid #e6e8e9;
+  padding: 15px 20px;
+  text-align: center;
+  gap: 5px;
+  width: 120px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  & span {
     font-weight: bold;
-    font-size: 20px;
-    color: ${props=> (props.isIncome ? "green" : "red")}
-}
+    font-size: 25px;
+    color: ${(props) => (props.isIncome ? "green" : "red")};
+  }
 `;
 
 const OverviewComponent = (props) => {
@@ -161,10 +166,10 @@ const OverviewComponent = (props) => {
       )}
       <ExpenseContainer>
         <ExpenseBox isIncome={false}>
-            Ausgaben<span>€{props.expense}</span>
+          Ausgaben<span>€{props.expense}</span>
         </ExpenseBox>
         <ExpenseBox isIncome={true}>
-            Einnahmen<span>€{props.income}</span>
+          Einnahmen<span>€{props.income}</span>
         </ExpenseBox>
       </ExpenseContainer>
     </Container>

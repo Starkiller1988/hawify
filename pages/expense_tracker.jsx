@@ -31,7 +31,6 @@ function Expense() {
         Startseite
       </Link>
 
-
       <div className="content">
         <Container>
           <Header>Kassenbuch</Header>

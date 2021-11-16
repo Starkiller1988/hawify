@@ -1,0 +1,87 @@
+* {
+  font-size: 18px;
+}
+
+.container {
+  top: 50%;
+  left: 45.5%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 15px;
+  width: 100%;
+  height: 570px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(90px, auto);
+}
+
+.input_calculate {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px;
+  color: white;
+  text-align: right;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: Electrolize;
+}
+
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  color: white;
+  width: 169px;
+  font-family: Electrolize;
+}
+
+#backspace {
+  color: white;
+  font-family: Electrolize;
+}
+
+#result {
+  grid-column: 3/5;
+  grid-row: 5;
+  color: white;
+  width: 167px;
+  font-family: Electrolize;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.highlight {
+  background: rgba(248, 113, 3, 0.815);
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 25px;
+  border-color: white;
+  color: white;
+}
+
+.title_calculator {
+  font-family: Electrolize;
+  text-align: center;
+  color: white;
+  width: 323px;
+  padding: 7px;
+  margin-top: 10px;
+  font-size: 35px;
+}
+.btn_calc {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 25px;
+  font-family: Electrolize;
+}

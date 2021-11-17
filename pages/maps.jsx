@@ -45,6 +45,7 @@ function Map() {
         zoom={10}
         onLoad={onLoad}
         onUnmount={onUnmount}
+        position= {{ lat: , lng:   }}
       >
         {/* Child components, such as markers, info windows, etc. */}
         <></>

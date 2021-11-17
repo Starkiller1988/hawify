@@ -227,13 +227,14 @@ h1:hover{
   box-shadow: 0 1px;
   font-weight: 100;
   font-family: Electrolize;
+  z-index: 1;
 }
 
 .task-list {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 500px;
+  height: 680px;
   border-style: solid;
   margin-left: 10px;
   margin-right: 10px;
@@ -341,13 +342,14 @@ h1:hover{
   box-shadow: 0 1px;
   font-weight: 100;
   font-family: Electrolize;
+  z-index: 1;
 }
 
 .item-list {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 500px;
+  height: 680px;
   border-style: solid;
   margin-left: 10px;
   margin-right: 10px;

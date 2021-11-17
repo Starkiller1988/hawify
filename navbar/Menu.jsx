@@ -32,11 +32,6 @@ const Menu = () => {
             <img className="icons" src={IMG2}/> <h1>Rechner</h1>
             </Link>
           </li>
-          <li className="map">
-            <Link to="/map" className="nav-item">
-            <img className="icons" src={IMG8}/> <h1>Karte</h1>
-            </Link>
-          </li>
           <li className="todolist">
             <Link to="/todo" className="nav-item">
             <div id="img-container">

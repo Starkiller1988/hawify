@@ -8,7 +8,6 @@ import ToDoList from "../pages/todo";
 import ShoppingList from "../pages/shoppingList";
 import Calculator from "../pages/calculator";
 import About from "../pages/about";
-import Maps from "../pages/maps";
 
 function App() {
   return (
@@ -22,9 +21,6 @@ function App() {
         </Route>
         <Route exact path="/shop">
           <ShoppingList />
-        </Route>
-        <Route exact path="/map">
-          <Maps/>
         </Route>
         <Route exact path="/calculator">
           <Calculator />

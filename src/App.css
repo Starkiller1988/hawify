@@ -3,43 +3,52 @@
   margin: 0;
 }
 
+.logopng{
+  display: flex;
+  margin: auto;
+  width: 250px;
+}
+
+.apptitle{
+  display: flex;
+  justify-content: center;
+  font-family: Gloria Hallelujah;
+  color: white;
+}
+
+.icons{
+  height: 30px;
+  display: flex;
+  margin-right: 20px;
+}
+
+h1{
+  font-size: 25px;
+}
+
+.titel{
+  font-size: 35px;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Electrolize;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.bkvideo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  filter: blur(4px);
+  background: linear-gradient(to top, lightgrey, teal);
 }
 
 .content {
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
-  height: 700px;
-  width: 90%;
-  margin-left: 16px;
-  margin-top: 50px;
-  border-style: solid;
-  border-radius: 20px;
+  background: rgba(56, 56, 56, 0.7);
+  height: 100%;
+  width: 100%;
+
+  border-style: solid white;
+  overflow: scroll;
 }
 
 /* Menu Component */
-
-.logo {
-  width: 67%;
-  display: flex;
-  margin: auto;
-  margin-top: 40px;
-  margin-left: 60px;
-  padding: 0;
-}
 
 .nav-list {
   list-style-type: none;
@@ -52,19 +61,18 @@ body {
 }
 
 .nav-item {
-  display: block;
-  margin: auto;
+  display: flex;
+  margin-left: 15px;
   margin-top: 17px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.7);
   text-align: center;
   font-family: Electrolize;
   font-size: 25px;
+  text-decoration: none;
+  color: black;
 }
 
-.cashbook {
+.map {
   background-color: white;
-  font-size: 20px;
   border-radius: 10px;
   height: 60px;
   width: 250px;
@@ -72,68 +80,102 @@ body {
   color: black;
   border-style: solid;
   box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s; 
 }
+
+.map:hover{
+  background-color: teal;
+  color: black;
+}
+
+.cashbook {
+  background-color: white;
+  border-radius: 10px;
+  height: 60px;
+  width: 250px;
+  background-size: 300px;
+  color: black;
+  border-style: solid;
+  box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s;
+}
+
+.cashbook:hover{
+  background-color: teal;
+  color: black;
+}
+
+h1:hover{
+  color: white;
+}
+
 
 .shopping {
   background-color: white;
-  font-size: 20px;
   height: 60px;
   width: 250px;
   border-radius: 10px;
   border-style: solid;
   box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s;
+}
+
+.shopping:hover{
+  background-color: teal;
+  color: black;
 }
 
 .calculator {
   background-color: white;
-  font-size: 20px;
   height: 60px;
   width: 250px;
   border-radius: 10px;
   border-style: solid;
   box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s;
+}
+
+.calculator:hover{
+  background-color: teal;
+  color: black;
 }
 
 .todolist {
   background-color: white;
-  font-size: 20px;
   height: 60px;
   width: 250px;
   border-radius: 10px;
   border-style: solid;
   box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s;
 }
 
-.map {
-  background-color: white;
-  font-size: 20px;
-  height: 60px;
-  width: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
+.todolist:hover{
+  background-color: teal;
+  color: black;
 }
 
 /* About HAWI.FY Component */
 
 .aboutapp {
   background-color: white;
-  font-size: 20px;
   height: 60px;
   width: 250px;
   border-radius: 10px;
   border-style: solid;
   box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s;
 }
 
-.start {
+.aboutapp:hover{
+  background-color: teal;
   color: black;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  font-family: Electrolize;
 }
+
+.arrow{
+  height: 40px;
+}
+ 
 
 .about_hawify {
   display: flex;
@@ -148,12 +190,10 @@ body {
 }
 
 .logo_about {
-  width: 85%;
+  width: 350px;
   display: flex;
   margin: auto;
-  margin-top: 50px;
-  margin-left: 25px;
-  padding: 0;
+  margin-top: 10px;
 }
 
 /* Task List Component */
@@ -217,6 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: auto;
 }
 
 .title_task {
@@ -261,7 +302,7 @@ body {
   display: flex;
   margin-top: 20px;
   font-family: Electrolize;
-  font-size: 22px;
+  font-size: 25px;
   color: white;
 }
 
@@ -315,6 +356,7 @@ body {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
+  overflow: auto;
 }
 
 .title_itemlist {
@@ -374,7 +416,7 @@ body {
   display: flex;
   margin-top: 20px;
   font-family: Electrolize;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
 }
 
@@ -383,3 +425,183 @@ body {
 }
 
 /* Expense Tracker Component */
+
+:root {
+  --box-shadow: 0px 1px 4px 1px rgba(199, 199, 199, 1);
+  --income: lightgreen;
+  --expense: rgb(231, 120, 120);
+}
+
+#balance {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#subtitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.balance-val {
+  font-size: 30px;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.col h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.row-expense {
+  box-shadow: var(--box-shadow);
+  margin-top: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.col-income,
+.col-expense {
+  padding: 31px;
+}
+
+.col-expense {
+  padding-left: 10px;
+}
+
+.col-income span {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  padding-right: 30px;
+}
+
+.income-text {
+  color: var(--income);
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.expense-text {
+  color: var(--expense);
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.transactions,
+.transactions li {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  color: white;
+}
+
+.transactions li {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#subheadertra {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.transactions li div {
+  margin-right: 10px;
+}
+
+.transactions li span {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-form input {
+  width: 40%;
+  height: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.transaction-form label {
+  margin-bottom: 10px;
+}
+
+.transaction-form button {
+  height: 30px;
+  margin-bottom: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: black;
+  width: 50%;
+}
+
+.income-btn {
+  background-color: var(--income);
+  margin-top: 20px;
+}
+
+.expense-btn {
+  background-color: var(--expense);
+  margin-top: 20px;
+}
+
+.delete-butn{
+  background: url('../components/expense_tracker_components/outline_delete_black_24dp.png');
+  height: 30px;
+  width: 30px;
+  display: row;
+  justify-content: space-between;  
+}
+
+.div_btnexpense{
+  display: flex;
+}

@@ -1,41 +1,19 @@
 import { Link } from "react-router-dom";
-import Video from "../components/Videos/Backgroundmovie.mp4";
 import React from "react";
-import styled from "styled-components";
-import HomeComponent from "../components/expense_tracker_components/home";
+import IMG1 from '../components/images/arrowwhite.png'
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0 10px;
-  font-family: Electrolize;
-`;
-
-const Header = styled.span`
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 0px;
-  font-family: Electrolize;
-`;
+import ExpenseTracker from "../components/expense_tracker_components/ExpenseTracker";
 
 function Expense() {
   return (
     <>
-      <video className="bkvideo" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
+      <div className="content">
 
       <Link to="/" className="start">
-        Startseite
+        <img src={IMG1} alt="arrow" className="arrow"/>
       </Link>
 
-      <div className="content">
-        <Container>
-          <Header>Kassenbuch</Header>
-          <HomeComponent />
-        </Container>
+        <ExpenseTracker />
       </div>
     </>
   );

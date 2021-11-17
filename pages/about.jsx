@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
-import Video from "../components/Videos/Backgroundmovie.mp4";
+import IMG1 from '../components/images/arrowwhite.png'
+
 
 const About = () => {
   return (
-    <div>
-      <video className="bkvideo" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
+    <>
+      <div className="content">
 
       <Link to="/" className="start">
-        Startseite
+      <img src={IMG1} alt="arrow" className="arrow"/>
       </Link>
+      
+        <img className="logo_about" src="../components/images/logo2.png" alt="" />
 
-      <div className="content">
-        <img className="logo_about" src="../src/images/Logo.png" alt="" />
+        <div className="apptitle"><h1>HAWI.FY</h1></div>
 
         <div className="about_hawify">
           <p>
@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

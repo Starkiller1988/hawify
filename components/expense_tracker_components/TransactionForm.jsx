@@ -45,7 +45,7 @@ function TransactionForm({ onNewTransaction }) {
             />
           </div>
         </label>
-        <div>
+        <div id="div_btnexpense">
           <button
             className="income-btn"
             onClick={(e) => addTransaction("income", e)}

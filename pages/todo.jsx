@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import TaskList from "../components/calendar_components/TaskList";
+import TaskList from "../components/todoList_components/TaskList";
 import { v4 as uuid } from "uuid";
-import Video from "../components/Videos/Backgroundmovie.mp4";
+import IMG1 from '../components/images/arrowwhite.png'
 
 const ToDoList = () => {
   const [tasks, setTasks] = useState([]);
@@ -41,16 +41,12 @@ const ToDoList = () => {
   }
 
   return (
-    <div className="todo">
-      <video className="bkvideo" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
-
-      <Link to="/" className="start">
-        Startseite
-      </Link>
-
+    <>
       <div className="content">
+      <Link to="/" className="start">
+      <img src={IMG1} alt="arrow" className="arrow"/>
+      </Link>
+      
         <TaskList tasks={tasks} toggleTask={toggleTask} />
 
         <input
@@ -69,7 +65,7 @@ const ToDoList = () => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

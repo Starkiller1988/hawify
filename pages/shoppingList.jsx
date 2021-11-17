@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import ItemList from "../components/shoppinglist_components/ItemList";
 import { v4 as uuid } from "uuid";
-import Video from "../components/Videos/Backgroundmovie.mp4";
+import IMG1 from '../components/images/arrowwhite.png'
 
 const ShoppingList = () => {
   const [items, setItems] = useState([]);
@@ -41,16 +41,13 @@ const ShoppingList = () => {
   }
 
   return (
-    <div>
-      <video className="bkvideo" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
+    <>
+      <div className="content">
 
       <Link to="/" className="start">
-        Startseite
+      <img src={IMG1} alt="arrow" className="arrow"/>
       </Link>
 
-      <div className="content">
         <ItemList items={items} toggleItem={toggleItem} />
 
         <input
@@ -69,7 +66,7 @@ const ShoppingList = () => {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

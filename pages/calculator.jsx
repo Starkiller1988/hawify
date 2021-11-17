@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Styles from "../pages/calculator.css";
-import Video from "../components/Videos/Backgroundmovie.mp4";
+import IMG1 from '../components/images/arrowwhite.png'
+
 
 const Calculator = () => {
   const [result, setResult] = useState("");
@@ -27,16 +28,14 @@ const Calculator = () => {
   };
 
   return (
-    <div>
-      <video className="bkvideo" autoPlay muted loop>
-        <source src={Video} type="video/mp4" />
-      </video>
-
-      <Link to="/" className="start">
-        Startseite
-      </Link>
+    <>
 
       <div className="content">
+
+      <Link to="/" className="start">
+      <img src={IMG1} alt="arrow" className="arrow"/>
+      </Link>
+      
         <div className="title_calculator">Taschenrechner</div>
 
         <div className="container">
@@ -102,7 +101,7 @@ const Calculator = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

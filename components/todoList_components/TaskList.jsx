@@ -13,8 +13,8 @@ export default function TaskList({ tasks, toggleTask }) {
       <div className="back">
         <div className="value_task">
           {tasks.map((task) => {
-            return <Task key={task.id} toggleTask={toggleTask} task={task} />;
-          })}
+            return <Task key={task.id} toggleTask={toggleTask} task={task} />
+          })};
         </div>
       </div>
     </div>

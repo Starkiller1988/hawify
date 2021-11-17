@@ -1,79 +1,59 @@
-import React, { useEffect, useState } from "react";
-import { CssBaseline, Grid } from "@material-ui/core";
+import React from "react";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { Link } from "react-router-dom";
+import IMG1 from "../components/images/arrowwhite.png";
 
-import { getPlacesData } from "../components/map_component/api/index";
-
-import Header from "../components/map_component/Header/Header";
-import List from "../components/map_component/List/List";
-import Map from "../components/map_component/Map/Map";
-
-const Maps = () => {
-  const [places, setPlaces] = useState([]);
-  const [filteredPlaces, setFilteredPlaces] = useState([]);
-
-  const [childClicked, , setChildClicked] = useState(null);
-
-  const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 });
-  const [bounds, setBounds] = useState({});
-
-  const [isLoading, setIsLoading] = useState(false);
-  const [type, setType] = useState("restaurants");
-  const [rating, setRating] = useState("");
-
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      ({ coords: { latitude, longitude } }) => {
-        setCoordinates({ lat: latitude, lng: longitude });
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const filteredPlaces = places.filter((place) => place.rating > rating);
-    setFilteredPlaces(filteredPlaces);
-  }, [rating]);
-
-  useEffect(() => {
-    if(bounds.sw && bounds.ne) {
-    setIsLoading(true);
-
-    getPlacesData(type, bounds.sw, bounds.ne)
-    .then((data) => {
-      setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));
-      setFilteredPlaces([]);
-      setIsLoading(false);
-    })
-  }
-  }, [type, bounds]);
-
-  return (
-    <>
-      <CssBaseline />
-      <Header setCoordinates={setCoordinates}/>
-      <Grid container spacing={3} style={{ width: "100%" }}>
-        <Grid item xs={12} md={4}>
-          <List
-            places={filteredPlaces.length ? filteredPlaces : places}
-            childClicked={childClicked}
-            isLoading={isLoading}
-            type={type}
-            setType={setType}
-            rating={rating}
-            setRating={setRating}
-          />
-        </Grid>
-        <Grid item xs={12} md={8}>
-          <Map
-            setCoordinates={setCoordinates}
-            setBounds={setBounds}
-            coordinates={coordinates}
-            places={filteredPlaces.length ? filteredPlaces : places}
-            setChildClicked={setChildClicked}
-          />
-        </Grid>
-      </Grid>
-    </>
-  );
+const containerStyle = {
+  width: "100%",
+  height: "760px",
 };
 
-export default Maps;
+const center = {
+  lat: -3.745,
+  lng: -38.523,
+};
+
+function Map() {
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: "AIzaSyAJ14LH4BhVUai87TulG5KDcXXcA6fLo-M",
+  });
+
+  const [map, setMap] = React.useState(null);
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds();
+    map.fitBounds(bounds);
+    setMap(map);
+  }, []);
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null);
+  }, []);
+
+  return isLoaded ? (
+    <>
+
+    <div className="content">
+      <Link to="/" className="start">
+        <img src={IMG1} alt="arrow" className="arrow" />
+      </Link>
+
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        {/* Child components, such as markers, info windows, etc. */}
+        <></>
+      </GoogleMap>
+      </div>
+    </>
+  ) : (
+    <></>
+  );
+}
+
+export default React.memo(Map);

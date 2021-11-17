@@ -5,6 +5,7 @@ import IMG3 from '../components/images/question.png'
 import IMG5 from '../components/images/shoppingbag.png'
 import IMG6 from '../components/images/checklist.png'
 import IMG7 from '../components/images/logo2.png'
+import IMG8 from '../components/images/globe.png'
 
 
 const Menu = () => {
@@ -29,6 +30,11 @@ const Menu = () => {
           <li className="calculator">
             <Link to="/calculator" className="nav-item">
             <img className="icons" src={IMG2}/> <h1>Rechner</h1>
+            </Link>
+          </li>
+          <li className="map">
+            <Link to="/map" className="nav-item">
+            <img className="icons" src={IMG8}/> <h1>Karte</h1>
             </Link>
           </li>
           <li className="todolist">

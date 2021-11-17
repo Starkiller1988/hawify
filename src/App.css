@@ -6,7 +6,7 @@
 .logopng{
   display: flex;
   margin: auto;
-  width: 350px;
+  width: 250px;
 }
 
 .apptitle{
@@ -68,6 +68,23 @@ body {
   font-family: Electrolize;
   font-size: 25px;
   text-decoration: none;
+  color: black;
+}
+
+.map {
+  background-color: white;
+  border-radius: 10px;
+  height: 60px;
+  width: 250px;
+  background-size: 300px;
+  color: black;
+  border-style: solid;
+  box-shadow: 0 0 0 2px;
+  transition-duration: 0.4s; 
+}
+
+.map:hover{
+  background-color: teal;
   color: black;
 }
 

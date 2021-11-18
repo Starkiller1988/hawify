@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import IMG1 from '../components/images/arrowwhite.png'
-
+import IMG2 from '../components/images/logo2.png'
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       <img src={IMG1} alt="arrow" className="arrow"/>
       </Link>
       
-        <img className="logo_about" src="../components/images/logo2.png" alt="" />
+        <img className="logo_about" src={IMG2} alt="" />
 
         <div className="apptitle"><h1>HAWI.FY</h1></div>
 

@@ -518,7 +518,6 @@ body {
 .transactions li span {
   display: inline-block;
   margin-right: 10px;
-  color: var(--expense, --income);
 }
 
 .transaction-form {

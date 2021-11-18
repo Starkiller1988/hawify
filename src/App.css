@@ -13,7 +13,6 @@
 .apptitle {
   display: flex;
   justify-content: center;
-  font-family: "Gloria Hallelujah", cursive;
   color: white;
 }
 
@@ -29,6 +28,7 @@ h1 {
 
 .titel {
   font-size: 35px;
+  font-family: "Gloria Hallelujah", cursive;
 }
 
 body {

@@ -1,32 +1,33 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Electrolize", sans-serif;
 }
 
-.logopng{
+.logopng {
   display: flex;
   margin: auto;
   width: 250px;
 }
 
-.apptitle{
+.apptitle {
   display: flex;
   justify-content: center;
-  font-family: Gloria Hallelujah;
+  font-family: "Gloria Hallelujah", cursive;
   color: white;
 }
 
-.icons{
+.icons {
   height: 30px;
   display: flex;
   margin-right: 20px;
 }
 
-h1{
+h1 {
   font-size: 25px;
 }
 
-.titel{
+.titel {
   font-size: 35px;
 }
 
@@ -35,17 +36,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to top, lightgrey, teal);
+  background: linear-gradient(to bottom, #0b8db5 0%, #69cfd1 100%);
 }
 
 .content {
-  position: fixed;
-  background: rgba(56, 56, 56, 0.7);
   height: 100%;
   width: 100%;
+  margin-top: 1.5rem;
+  overflow: auto;
+}
 
-  border-style: solid white;
-  overflow: scroll;
+.wrapper {
+  padding: 0 1rem 1rem 1rem;
 }
 
 /* Menu Component */
@@ -64,64 +66,36 @@ body {
   display: flex;
   margin-left: 15px;
   margin-top: 17px;
-  text-align: center;
   font-family: Electrolize;
   font-size: 25px;
   text-decoration: none;
   color: black;
 }
 
-.map {
-  background-color: white;
-  border-radius: 10px;
-  height: 60px;
-  width: 250px;
-  background-size: 300px;
-  color: black;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
-  transition-duration: 0.4s; 
-}
-
-.map:hover{
-  background-color: teal;
-  color: black;
-}
-
 .cashbook {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 60px;
   width: 250px;
-  background-size: 300px;
   color: black;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
   transition-duration: 0.4s;
 }
 
-.cashbook:hover{
-  background-color: teal;
+.cashbook:hover {
+  background-color: #76d2ee;
   color: black;
 }
-
-h1:hover{
-  color: white;
-}
-
 
 .shopping {
   background-color: white;
   height: 60px;
   width: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
+  border-radius: 5px;
   transition-duration: 0.4s;
 }
 
-.shopping:hover{
-  background-color: teal;
+.shopping:hover {
+  background-color: #76d2ee;
   color: black;
 }
 
@@ -129,14 +103,12 @@ h1:hover{
   background-color: white;
   height: 60px;
   width: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
+  border-radius: 5px;
   transition-duration: 0.4s;
 }
 
-.calculator:hover{
-  background-color: teal;
+.calculator:hover {
+  background-color: #76d2ee;
   color: black;
 }
 
@@ -144,14 +116,12 @@ h1:hover{
   background-color: white;
   height: 60px;
   width: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
+  border-radius: 5px;
   transition-duration: 0.4s;
 }
 
-.todolist:hover{
-  background-color: teal;
+.todolist:hover {
+  background-color: #76d2ee;
   color: black;
 }
 
@@ -161,21 +131,18 @@ h1:hover{
   background-color: white;
   height: 60px;
   width: 250px;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 0 0 2px;
+  border-radius: 5px;
   transition-duration: 0.4s;
 }
 
-.aboutapp:hover{
-  background-color: teal;
+.aboutapp:hover {
+  background-color: #76d2ee;
   color: black;
 }
 
-.arrow{
+.arrow {
   height: 40px;
 }
- 
 
 .about_hawify {
   display: flex;
@@ -493,20 +460,14 @@ h1:hover{
 }
 
 .row-expense {
-  box-shadow: var(--box-shadow);
   margin-top: 30px;
-  width: 400px;
   display: flex;
   justify-content: center;
 }
 
 .col-income,
 .col-expense {
-  padding: 31px;
-}
-
-.col-expense {
-  padding-left: 10px;
+  padding: 1rem;
 }
 
 .col-income span {
@@ -538,7 +499,6 @@ h1:hover{
 .transactions li {
   display: flex;
   justify-content: space-between;
-  box-shadow: var(--box-shadow);
   margin-bottom: 10px;
   padding: 10px;
 }
@@ -558,6 +518,7 @@ h1:hover{
 .transactions li span {
   display: inline-block;
   margin-right: 10px;
+  color: var(--expense, --income);
 }
 
 .transaction-form {
@@ -577,33 +538,32 @@ h1:hover{
 }
 
 .transaction-form button {
-  height: 30px;
-  margin-bottom: 5px;
+  height: 2rem;
   border: none;
   text-transform: uppercase;
   font-size: 15px;
   color: black;
-  width: 50%;
 }
 
 .income-btn {
   background-color: var(--income);
-  margin-top: 20px;
 }
 
 .expense-btn {
   background-color: var(--expense);
-  margin-top: 20px;
 }
 
-.delete-butn{
-  background: url('../components/expense_tracker_components/outline_delete_black_24dp.png');
+.delete-butn {
+  background: url("../components/expense_tracker_components/outline_delete_black_24dp.png");
   height: 30px;
   width: 30px;
   display: row;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
-.div_btnexpense{
+#div_btnexpense {
   display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 0.5rem;
 }

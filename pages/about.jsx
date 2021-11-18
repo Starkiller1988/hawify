@@ -25,8 +25,8 @@ const About = () => {
             Hilfestellung für den Haushaltsalltag. Die primären Komponenten
             bestehen aus einem Kassenbuch und einer Einkaufsliste. Als weitere
             nützliche Features wurden noch ein Taschenrechner mit einfacher
-            Funktion und ein Kalender für die täglichen "To-Do's"
-            einprogramiert. Erweiterungen der Anwendung sind geplant.
+            Funktion und eine To-Do Liste einprogramiert. Erweiterungen der Anwendung 
+            sind in Planung.
           </p>
         </div>
       </div>

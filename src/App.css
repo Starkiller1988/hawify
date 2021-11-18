@@ -196,6 +196,8 @@ body {
   font-weight: 100;
   font-family: Electrolize;
   z-index: 1;
+  background-color: #76d2ee;
+  color: white;
 }
 
 .task-list {
@@ -311,6 +313,8 @@ body {
   font-weight: 100;
   font-family: Electrolize;
   z-index: 1;
+  background-color: #76d2ee; 
+  color: white;
 }
 
 .item-list {

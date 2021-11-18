@@ -13,7 +13,7 @@ const About = () => {
       
         <img className="logo_about" src={IMG2} alt="" />
 
-        <div className="apptitle"><h1>HAWI.FY</h1></div>
+        <div><h1 className="apptitle">HAWI.FY</h1></div>
 
         <div className="about_hawify">
           <p>

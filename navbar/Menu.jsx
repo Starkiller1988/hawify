@@ -5,7 +5,6 @@ import IMG3 from '../components/images/question.png'
 import IMG5 from '../components/images/shoppingbag.png'
 import IMG6 from '../components/images/checklist.png'
 import IMG7 from '../components/images/logo2.png'
-import IMG8 from '../components/images/globe.png'
 
 
 const Menu = () => {

@@ -7,10 +7,10 @@ function TransactionHistory({ transactions, onDeleteTransaction }) {
       <ul className="transactions">
         {transactions.map((data) => (
           <li key={data.id}>
-            <div>{data.name}</div>
+            <div className="history_value">{data.name}</div>
             <div>
-              <span>€{data.amount}</span>
-              <button onClick={() => onDeleteTransaction(data.id)}>
+              <span className="value_history">€ {data.amount} .-</span>
+              <button className="delete-butn"onClick={() => onDeleteTransaction(data.id)}>
                 Löschen
               </button>
             </div>

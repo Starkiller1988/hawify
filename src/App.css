@@ -41,8 +41,8 @@ body {
 }
 
 .content {
-  height: 680px;
-  width: 380px;
+  height: 100%;
+  width: 100%px;
   margin-top: 1.5rem;
   overflow: auto;
 }
@@ -204,7 +204,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 500px;
+  height: 450px;
   border-style: solid;
   margin-left: 10px;
   margin-right: 10px;
@@ -317,11 +317,12 @@ body {
   color: white;
 }
 
+
 .item-list {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 500px;
+  height: 450px;
   border-style: solid;
   margin-left: 10px;
   margin-right: 10px;

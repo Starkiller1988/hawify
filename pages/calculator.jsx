@@ -11,6 +11,10 @@ const Calculator = () => {
   const handleClick = (e) => {
     if (operators.includes(e.target.name) && result.endsWith(e.target.name)) {
       return;
+    } 
+
+    if (result.endsWith(operators) && operators.includes(e.target.name)) {
+      return;
     }
 
     setResult(result.concat(e.target.name));
@@ -28,20 +32,20 @@ const Calculator = () => {
     try {
       setResult(eval(result).toString());
     } catch (err) {
-      setResult("Error");
+      setResult;
     }
   };
 
   return (
     <>
-      <div className="content">
+      <div className="cont">
         <Link to="/" className="start">
           <img src={IMG1} alt="arrow" className="arrow" />
         </Link>
 
         <div className="title_calculator">Taschenrechner</div>
         <form>
-          <input type="text" value={result} className="input_calculate" />
+          <input type="text" defaultValue={result} className="input_calculate" />
         </form>
 
         <div className="keypad">

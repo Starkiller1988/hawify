@@ -61,7 +61,7 @@ function ExpenseTracker() {
   }, [transactions]);
 
   return (
-    <div>
+    <div className="ex-con">
       <h1 id="title">Kassenbuch</h1>
       <Expense income={income} expense={expense} />
       <TransactionHistory

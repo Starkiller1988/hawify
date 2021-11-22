@@ -6,16 +6,17 @@ import ExpenseTracker from "../components/expense_tracker_components/ExpenseTrac
 
 function Expense() {
   return (
-    <div className="wrapper">
       <div className="content">
 
-      <Link to="/" className="start">
+<Link to="/" className="start">
         <img src={IMG1} alt="arrow" className="arrow"/>
       </Link>
-
+<div className="code">
         <ExpenseTracker />
+        </div>
       </div>
-    </div>
+
+
   );
 }
 

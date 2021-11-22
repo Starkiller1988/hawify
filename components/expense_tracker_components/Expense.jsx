@@ -1,10 +1,15 @@
 import React from "react";
 
 function ExpenseT({ income, expense }) {
+
+  const balance = Number( income - expense );
+  console.log(balance)
+
+
   return (
     <div>
       <h2 id="balance">Deine Bilanz</h2>
-      <div className="balance-val">€{income - expense}</div>
+      <div className={`balance-val ${balance < 0 ? 'red' : 'green'}`} >€{income - expense}</div>
       <div className="row row-expense">
         <div className="col col-income">
           <span>

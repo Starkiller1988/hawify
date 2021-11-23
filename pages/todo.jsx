@@ -33,7 +33,6 @@ const ToDoList = () => {
   function handleAddTask(e) {
     const name = taskNameRef.current.value;
     if (name === "") return;
-    console.log(name);
     setTasks((prevTasks) => {
       return [...prevTasks, { id: uuid(), name: name, complete: false }];
     });

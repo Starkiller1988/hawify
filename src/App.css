@@ -104,6 +104,19 @@ body {
   color: black;
 }
 
+.calendar{
+  background-color: white;
+  height: 60px;
+  width: 250px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.calendar:hover {
+  background-color: #76d2ee;
+  color: black;
+}
+
 .calculator {
   background-color: white;
   height: 60px;
@@ -617,4 +630,23 @@ body {
 .trans-hist{
   overflow-y: scroll;
   height: 50px;
+}
+
+/* Calendar Component */
+
+.cal_event{
+  display: flex;
+  justify-content: center;
+}
+
+.title_cal{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px ;
+}
+
+.sub_new_event{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }

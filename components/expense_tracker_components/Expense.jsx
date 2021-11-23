@@ -3,8 +3,6 @@ import React from "react";
 function ExpenseT({ income, expense }) {
 
   const balance = Number( income - expense );
-  console.log(balance)
-
 
   return (
     <div>

@@ -560,6 +560,8 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   color: black;
+  border-style: solid;
+  border-color: black;
 }
 
 .income-btn {
@@ -580,6 +582,9 @@ body {
   display: row;
   justify-content: space-between;
   border-radius: 5px;
+  background-color: lightcoral;
+  border-color: white;
+  border-style: solid;
 }
 
 #div_btnexpense {
@@ -605,15 +610,11 @@ body {
 .code{
   background-color: rgba(0, 0, 0, 0.5) ;
   height: 750px;
-  overflow: auto;
+  border-radius: 10px;
+  padding-top: 10px;
 }
 
 .trans-hist{
   overflow-y: scroll;
-  height: 150px;
+  height: 50px;
 }
-
-.ex-con{
-  border-radius: ;
-}
-

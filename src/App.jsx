@@ -1,4 +1,4 @@
-import React, { UseState } from "react";
+import React from "react";
 import "./App.css";
 import Menu from "../navbar/Menu";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
